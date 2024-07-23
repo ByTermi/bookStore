@@ -20,6 +20,21 @@ public class BookController {
     
     @GetMapping("/")
     public String home(){
-        return "hola";
+        return "home";
+    }
+    
+    @GetMapping("/book_register")
+    public String bookRegister(){
+        return "bookRegister";
+    }
+    
+    @GetMapping("/available_books")
+    public String getAllBooks(){
+        return "bookList";
+    }
+    
+    @GetMapping("/my_books")
+    public String getSavedBooks(){
+        return "myBooks";
     }
 }

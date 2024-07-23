@@ -21,6 +21,9 @@ public class Book {
     private String author;
     
     private Integer price;
+    
+     public Book() {
+    }
 
     public Book(Integer id, String name, String author, Integer price) {
         this.id = id;

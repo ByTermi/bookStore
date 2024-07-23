@@ -8,12 +8,14 @@ package com.bookStore.bookStore.controller;
 
 import com.bookStore.bookStore.entity.Book;
 import com.bookStore.bookStore.service.BookService;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 
 
@@ -38,8 +40,9 @@ public class BookController {
     }
     
     @GetMapping("/available_books")
-    public String getAllBooks(){
-        return "bookList";
+    public ModelAndView getAllBooks(){
+        List<Book> list = service.getAllBooks();
+        return new ModelAndView("bookList", "book", list);
     }
     
     @GetMapping("/my_books")

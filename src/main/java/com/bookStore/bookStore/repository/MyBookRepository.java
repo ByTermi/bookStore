@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 
 /**
  *
- * @author Vaquin
+ * @author Jaime Novillo
  */
 @Repository
 public interface MyBookRepository extends JpaRepository<MyBookList, Integer>{

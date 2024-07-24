@@ -10,7 +10,7 @@ import jakarta.persistence.Table;
 
 /**
  *
- * @author Vaquin
+ * @author Jaime Novillo
  */
 @Entity
 @Table(name="MyBooks")

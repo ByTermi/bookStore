@@ -25,7 +25,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  *
- * @author Vaquin
+ * @author Jaime Novillo
  */
 @Controller
 public class BookController {

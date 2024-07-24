@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 /**
  *
- * @author Vaquin
+ * @author Jaime Novillo
  */
 @Controller
 public class MyBookListController {

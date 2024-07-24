@@ -4,9 +4,8 @@
  */
 package com.bookStore.bookStore.service;
 
-import com.bookStore.bookStore.entity.Book;
-import com.bookStore.bookStore.repository.BookRepository;
-import java.util.List;
+import com.bookStore.bookStore.entity.MyBookList;
+import com.bookStore.bookStore.repository.MyBookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -14,22 +13,13 @@ import org.springframework.stereotype.Service;
  *
  * @author Vaquin
  */
-
 @Service
-public class BookService {
+public class MyBookListService {
     
     @Autowired
-    private BookRepository bRepo;
+    private MyBookRepository mybook;
     
-    public void save (Book b){
-        bRepo.save(b);
-    }
-    
-    public List<Book> getAllBooks(){
-        return bRepo.findAll();
-    }
-    
-    public Book getBookById(Integer id){
-        return bRepo.findById(id).get();
+    public void saveMyBooks(MyBookList book){
+        mybook.save(book);
     }
 }

@@ -6,6 +6,7 @@ package com.bookStore.bookStore.service;
 
 import com.bookStore.bookStore.entity.MyBookList;
 import com.bookStore.bookStore.repository.MyBookRepository;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -21,5 +22,13 @@ public class MyBookListService {
     
     public void saveMyBooks(MyBookList book){
         mybook.save(book);
+    }
+    
+    public List<MyBookList> getAllMyBooks(){
+        return mybook.findAll();
+    }
+    
+    public void deleteById(Integer id){
+        mybook.deleteById(id);
     }
 }

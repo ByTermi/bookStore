@@ -13,4 +13,4 @@ This project is a simple Book Store application built with Spring Boot, MySQL, a
 - Add new books to the database.
 - Edit existing books in the database.
 - Delete books from the database.
-- Add books to a personalized list called "MyBooks".
+- Add books to a list called "MyBooks".

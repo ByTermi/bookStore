@@ -1,4 +1,4 @@
-Aquí está tu `README.md` actualizado con la traducción del texto en español al inglés, mientras mantengo los títulos y listas originales:
+
 
 # Book Store Portfolio Project
 

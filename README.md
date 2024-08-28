@@ -4,7 +4,7 @@
 
 ## Requisitos
 
-- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) 11 o superior.
+- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) 11 or higher.
 
 ## Description
 This project is a simple Book Store application built with Spring Boot, MySQL, and JPA. The application allows users to add, edit, and delete books from a MySQL database. Additionally, users can add books to a list called "MyBooks".
@@ -49,13 +49,18 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 - **`spring.jpa.hibernate.ddl-auto=update`**: Ensures Hibernate automatically updates the database schema.
 - **`spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect`**: Sets the SQL dialect to MySQL.
 
-## Ejecución de la Aplicación
+## Application Execution
 
 To run the application, you can use the Maven Wrapper provided in the project. Depending on your operating system, use one of the following commands:
 
 1. Open a terminal or command line in the project's root directory.
 2. Execute the following command:
 
+- **Windows:**
    ```bash
    .\mvnw spring-boot:run
+   ```
+- **Linux:**
+   ```bash
+   ./mvnw spring-boot:run
    ```

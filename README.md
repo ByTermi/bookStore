@@ -2,7 +2,7 @@
 
 # Book Store Portfolio Project
 
-## Requisitos
+## Requirements
 
 - [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) 11 or higher.
 

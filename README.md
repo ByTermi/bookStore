@@ -1,29 +1,24 @@
-# Book Store Portfolio Project
-
-## Requisitos
-
-- [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html) 11 o superior.
-
-## Description
+Book Store Portfolio Project
+Requirements
+Java JDK 11 or higher.
+Description
 This project is a simple Book Store application built with Spring Boot, MySQL, and JPA. The application allows users to add, edit, and delete books from a MySQL database. Additionally, users can add books to a list called "MyBooks".
 
-## Technologies Used
-- Java
-- Spring Boot
-- MySQL
-- JPA (Java Persistence API)
+Technologies Used
+Java
+Spring Boot
+MySQL
+JPA (Java Persistence API)
+Features
+Add new books to the database.
+Edit existing books in the database.
+Delete books from the database.
+Add books to a list called "MyBooks".
+Configuration
+To run this project, you need to configure the database connection and application settings in the application.properties file. Below are the required configurations:
 
-## Features
-- Add new books to the database.
-- Edit existing books in the database.
-- Delete books from the database.
-- Add books to a list called "MyBooks".
-
-## Configuration
-
-To run this project, you need to configure the database connection and application settings in the `application.properties` file. Below are the required configurations:
-
-```properties
+properties
+Copiar código
 server.port=1001
 spring.application.name=bookStore
 spring.datasource.name=book
@@ -46,12 +41,12 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
 - **`spring.jpa.hibernate.ddl-auto=update`**: Ensures Hibernate automatically updates the database schema.
 - **`spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect`**: Sets the SQL dialect to MySQL.
 
-## Ejecución de la Aplicación
+## Running the Application
 
-Para ejecutar la aplicación, puedes usar el Maven Wrapper proporcionado en el proyecto. Dependiendo de tu sistema operativo, usa uno de los siguientes comandos:
+To run the application, you can use the Maven Wrapper provided in the project. Depending on your operating system, use one of the following commands:
 
-1. Abre una terminal o línea de comandos en el directorio raíz del proyecto.
-2. Ejecuta el siguiente comando:
+1. Open a terminal or command line in the project's root directory.
+2. Execute the following command:
 
    ```bash
    .\mvnw spring-boot:run
